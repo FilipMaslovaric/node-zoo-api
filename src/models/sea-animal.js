@@ -1,33 +1,33 @@
 let items = [
   {
     id: 1,
-    name: "Gorillas",
+    name: "Whale",
     count: 4
   },
   {
     id: 2,
-    name: "Zebra",
+    name: "Tiger Shark",
     count: 14
   },
   {
     id: 3,
-    name: "Meercats",
+    name: "Seal",
     count: 26
   },
   {
-    id: 3,
-    name: "Ducks",
-    count: 56
+    id: 1,
+    name: "Octopus",
+    count: 4
+  },
+  {
+    id: 2,
+    name: "Dory",
+    count: 14
   },
   {
     id: 3,
-    name: "Pidgeons",
-    count: 12
-  },
-  {
-    id: 3,
-    name: "Pugs",
-    count: 2
+    name: "Pistol Shrimp",
+    count: 26
   }
 ];
 
@@ -66,13 +66,13 @@ const search = query => {
 };
 
 const create = ({ name, count }) => {
-  const animal = {
+  const seaAnimal = {
     id: items.length + 1,
     name,
     count: parseInt(count, 10)
   };
-  items.push(animal);
-  return animal;
+  items.push(seaAnimal);
+  return seaAnimal;
 };
 
 const findAndUpdate = (id, changes) => {
